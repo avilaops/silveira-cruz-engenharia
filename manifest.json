@@ -1,0 +1,30 @@
+{
+  "name": "Silveira Cruz Engenharia",
+  "short_name": "Silveira Cruz",
+  "description": "Excelência em Engenharia Civil - Projetos, obras e soluções completas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "engineering", "construction"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://engenharia.avila.inc/sitemap.xml
+
+# Disallow common admin paths (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow important resources
+Allow: /styles.css
+Allow: /script.js
+Allow: /logo.png
+Allow: /favicon.ico
