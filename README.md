@@ -58,23 +58,41 @@ Website profissional desenvolvido para a Silveira Cruz Engenharia, empresa líde
 - ✅ Seções bem estruturadas e organizadas
 
 ## Deployment no Cloudflare
-Como o domínio `engenharia.avila.inc` já está configurado no Cloudflare, siga estes passos:
 
-### 1. Upload dos Arquivos
-1. Acesse o painel do Cloudflare
-2. Vá para **Pages** ou configure o **DNS** para apontar para seu servidor
-3. Faça upload de todos os arquivos para o diretório raiz
+### Opção 1: Deploy Automático via GitHub (Recomendado)
+1. Acesse [Cloudflare Dashboard](https://dash.cloudflare.com/)
+2. Vá para **Pages** → **Create a project**
+3. Selecione **Connect to Git**
+4. Escolha **GitHub** e conecte o repositório: `avilaops/silveira-cruz-engenharia`
+5. Configure:
+   - **Project name**: `silveira-cruz-engenharia`
+   - **Production branch**: `main`
+   - **Build command**: (deixe vazio)
+   - **Build output directory**: (deixe vazio - usar raiz)
+6. Clique em **Save and Deploy**
 
-### 2. Configuração DNS (se necessário)
-- Certifique-se de que o registro A ou CNAME está apontando corretamente
-- Configure SSL/TLS para "Full" ou "Full (Strict)"
+### Opção 2: Deploy Manual via Wrangler CLI
+```bash
+# Instalar Wrangler CLI (se não estiver instalado)
+npm install -g wrangler
 
-### 3. Otimizações Cloudflare Recomendadas
-- **Minification**: Ative para CSS, JavaScript e HTML
-- **Auto Minify**: Ative todas as opções
-- **Brotli Compression**: Ative para melhor compressão
-- **Caching**: Configure regras de cache adequadas
-- **Security**: Configure firewall se necessário
+# Fazer login no Cloudflare
+wrangler login
+
+# Deploy do projeto
+wrangler pages deploy . --project-name silveira-cruz-engenharia
+```
+
+### Configuração do Domínio Personalizado
+1. No painel do Cloudflare Pages, vá para o projeto criado
+2. Clique em **Custom domains**
+3. Adicione o domínio: `engenharia.avila.inc`
+4. Configure os registros DNS automaticamente (se o domínio estiver no Cloudflare)
+
+### URLs de Acesso
+- **GitHub Pages**: https://avilaops.github.io/silveira-cruz-engenharia/
+- **Cloudflare Pages**: https://silveira-cruz-engenharia.pages.dev/
+- **Domínio Personalizado**: https://engenharia.avila.inc (após configuração)
 
 ## Otimizações de Performance
 - Imagens otimizadas e comprimidas

@@ -1,0 +1,8 @@
+name = "silveira-cruz-engenharia"
+compatibility_date = "2024-10-25"
+
+[env.production]
+  name = "silveira-cruz-engenharia"
+
+# Configuração para Cloudflare Pages
+# Este arquivo pode ser usado quando as permissões corretas estiverem disponíveis
