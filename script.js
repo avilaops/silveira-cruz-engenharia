@@ -2,47 +2,78 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
     
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('show');
+    // Toggle menu function
+    function toggleMenu() {
+        const isOpen = navMenu.classList.contains('show');
+        
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+    
+    // Open menu with animations
+    function openMenu() {
+        navMenu.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scroll
         
         // Animate hamburger menu
         const lines = navToggle.querySelectorAll('.nav-toggle-line');
-        if (navMenu.classList.contains('show')) {
-            lines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-            lines[1].style.opacity = '0';
-            lines[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-        } else {
-            lines[0].style.transform = 'none';
-            lines[1].style.opacity = '1';
-            lines[2].style.transform = 'none';
-        }
-    });
+        lines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        lines[1].style.opacity = '0';
+        lines[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+        
+        // Animate menu items with stagger effect
+        navLinks.forEach((link, index) => {
+            link.style.opacity = '0';
+            link.style.transform = 'translateX(-30px)';
+            
+            setTimeout(() => {
+                link.style.transition = 'all 0.4s ease';
+                link.style.opacity = '1';
+                link.style.transform = 'translateX(0)';
+            }, index * 100 + 200);
+        });
+    }
+    
+    // Close menu with animations
+    function closeMenu() {
+        navMenu.classList.remove('show');
+        document.body.style.overflow = ''; // Restore background scroll
+        
+        // Reset hamburger menu
+        const lines = navToggle.querySelectorAll('.nav-toggle-line');
+        lines[0].style.transform = 'none';
+        lines[1].style.opacity = '1';
+        lines[2].style.transform = 'none';
+        
+        // Reset nav links
+        navLinks.forEach(link => {
+            link.style.transition = '';
+            link.style.opacity = '';
+            link.style.transform = '';
+        });
+    }
+    
+    // Event listeners
+    navToggle.addEventListener('click', toggleMenu);
     
     // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            navMenu.classList.remove('show');
-            
-            // Reset hamburger menu
-            const lines = navToggle.querySelectorAll('.nav-toggle-line');
-            lines[0].style.transform = 'none';
-            lines[1].style.opacity = '1';
-            lines[2].style.transform = 'none';
+            closeMenu();
         });
     });
     
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
         if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
-            navMenu.classList.remove('show');
-            
-            // Reset hamburger menu
-            const lines = navToggle.querySelectorAll('.nav-toggle-line');
-            lines[0].style.transform = 'none';
-            lines[1].style.opacity = '1';
-            lines[2].style.transform = 'none';
+            if (navMenu.classList.contains('show')) {
+                closeMenu();
+            }
         }
     });
 });
