@@ -1,125 +1,271 @@
-# Silveira Cruz Engenharia - Website
+# 🏗️ Silveira Cruz Engenharia - Website Oficial
 
-## Descrição
-Website profissional desenvolvido para a Silveira Cruz Engenharia, empresa líder em engenharia civil. O site apresenta um design moderno e elegante com paleta de cores em tons de azul, branco e prata, refletindo a qualidade premium dos serviços prestados.
+Website profissional da Silveira Cruz Engenharia - Excelência em Construção Civil.
 
-## Características
-- **Design Responsivo**: Adaptável a todos os dispositivos (desktop, tablet, mobile)
-- **Paleta de Cores Premium**: Tons de azul, branco e prata
-- **Performance Otimizada**: Carregamento rápido e animações suaves
-- **SEO Friendly**: Estrutura otimizada para mecanismos de busca
-- **Acessibilidade**: Seguindo as melhores práticas de acessibilidade web
-
-## Estrutura de Arquivos
-```
-/
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
-├── script.js           # JavaScript
-├── favicon.ico         # Ícone do site
-├── logo.png            # Logo principal
-├── logo branco.png     # Logo para fundo escuro
-├── logo - Copia.png    # Logo alternativo
-└── README.md           # Este arquivo
-```
-
-## Serviços Apresentados
-1. **Projetos Arquitetônicos** - Desenvolvimento de projetos personalizados
-2. **Desdobro** - Desdobro de terrenos e regularização
-3. **Estrutural** - Projetos estruturais seguros e eficientes
-4. **Hidrossanitária** - Sistemas hidráulicos e sanitários completos
-5. **Orçamento** - Orçamentos detalhados e precisos
-6. **Regularização** - Regularização de obras e documentação
-7. **Administração de Obras** - Gestão completa de obras
-8. **Perícia e Laudos** - Perícias técnicas especializadas
-
-## Informações de Contato
-- **Endereço**: Rua Bahia, 4822, Votuporanga - SP, CEP: 15500-005
-- **Telefone**: (17) 3423-2229
-- **WhatsApp**: +55 17 98152-2900
-- **Instagram**: @silveiracruzengenharia
-- **Domínio**: engenharia.avila.inc
-
-## Tecnologias Utilizadas
-- **HTML5**: Estrutura semântica moderna
-- **CSS3**: Estilos avançados com gradientes, animações e flexbox/grid
-- **JavaScript ES6+**: Interatividade e animações
-- **Font Awesome**: Ícones profissionais
-- **Google Fonts**: Tipografia premium (Inter + Playfair Display)
-
-## Funcionalidades
-- ✅ Navegação suave entre seções
-- ✅ Menu responsivo para dispositivos móveis
-- ✅ Animações de entrada para elementos
-- ✅ Efeitos de hover interativos
-- ✅ Botões de contato direto (WhatsApp, telefone, Instagram)
-- ✅ Design otimizado para conversão
-- ✅ Header fixo com efeito blur
-- ✅ Seções bem estruturadas e organizadas
-
-## Deployment no Cloudflare
-
-### Opção 1: Deploy Automático via GitHub (Recomendado)
-1. Acesse [Cloudflare Dashboard](https://dash.cloudflare.com/)
-2. Vá para **Pages** → **Create a project**
-3. Selecione **Connect to Git**
-4. Escolha **GitHub** e conecte o repositório: `avilaops/silveira-cruz-engenharia`
-5. Configure:
-   - **Project name**: `silveira-cruz-engenharia`
-   - **Production branch**: `main`
-   - **Build command**: (deixe vazio)
-   - **Build output directory**: (deixe vazio - usar raiz)
-6. Clique em **Save and Deploy**
-
-### Opção 2: Deploy Manual via Wrangler CLI
-```bash
-# Instalar Wrangler CLI (se não estiver instalado)
-npm install -g wrangler
-
-# Fazer login no Cloudflare
-wrangler login
-
-# Deploy do projeto
-wrangler pages deploy . --project-name silveira-cruz-engenharia
-```
-
-### Configuração do Domínio Personalizado
-1. No painel do Cloudflare Pages, vá para o projeto criado
-2. Clique em **Custom domains**
-3. Adicione o domínio: `engenharia.avila.inc`
-4. Configure os registros DNS automaticamente (se o domínio estiver no Cloudflare)
-
-### URLs de Acesso
-- **GitHub Pages**: https://avilaops.github.io/silveira-cruz-engenharia/
-- **Cloudflare Pages**: https://silveira-cruz-engenharia.pages.dev/
-- **Domínio Personalizado**: https://engenharia.avila.inc (após configuração)
-
-## Otimizações de Performance
-- Imagens otimizadas e comprimidas
-- CSS e JavaScript minificados (em produção)
-- Carregamento assíncrono de recursos externos
-- Lazy loading para imagens
-- Preload de recursos críticos
-
-## Manutenção
-- **Backup Regular**: Mantenha backups dos arquivos
-- **Atualizações**: Verifique atualizações das dependências
-- **Monitoramento**: Use ferramentas como Google Analytics (configurar)
-- **SEO**: Monitore ranking e performance com Google Search Console
-
-## Melhorias Futuras (Opcionais)
-- [ ] Formulário de contato integrado
-- [ ] Galeria de projetos realizados
-- [ ] Blog/notícias da empresa
-- [ ] Sistema de depoimentos de clientes
-- [ ] Chat ao vivo
-- [ ] Múltiplos idiomas
-- [ ] PWA (Progressive Web App)
-
-## Suporte
-Para alterações ou atualizações no site, entre em contato com a equipe de desenvolvimento.
+[![Deploy Status](https://img.shields.io/badge/deploy-success-brightgreen)](https://avilaops.github.io/silveira-cruz-engenharia/)
+[![GitHub Pages](https://img.shields.io/badge/hosted-GitHub%20Pages-blue)](https://pages.github.com/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ---
 
-**Desenvolvido com excelência para resultados excepcionais.**
-*© 2024 Silveira Cruz Engenharia - Todos os direitos reservados.*
+## 🌐 Links
+
+- **Site Produção:** https://avilaops.github.io/silveira-cruz-engenharia/
+- **Domínio Customizado:** https://engenharia.avila.inc
+- **GitHub Actions:** [Ver Workflows](https://github.com/avilaops/silveira-cruz-engenharia/actions)
+
+---
+
+## 📊 Status de Deploy
+
+**Status Atual:** ✅ **ONLINE E FUNCIONANDO**
+
+Para verificar o status detalhado de deploy, consulte:
+- [📈 Status Rápido](./DEPLOY_STATUS.md) - Visão geral e métricas
+- [📋 Verificação Completa](./DEPLOY_VERIFICATION.md) - Relatório detalhado
+- [🔧 Troubleshooting](./TROUBLESHOOTING.md) - Guia de solução de problemas
+
+---
+
+## 🚀 Como Fazer Deploy
+
+### Deploy Automático (Recomendado)
+
+O site é automaticamente deployado via GitHub Actions quando há push na branch `main`:
+
+```bash
+git add .
+git commit -m "Sua mensagem de commit"
+git push origin main
+```
+
+Aguarde ~1 minuto e o site será atualizado automaticamente.
+
+### Deploy Manual via Script
+
+```bash
+# Dar permissão de execução (primeira vez)
+chmod +x deploy.sh
+
+# Executar script
+./deploy.sh
+```
+
+O script irá:
+1. ✅ Validar presença do `index.html`
+2. ✅ Fazer git add de todos os arquivos
+3. ✅ Solicitar mensagem de commit
+4. ✅ Fazer commit e push para GitHub
+5. ✅ Exibir instruções para Cloudflare (opcional)
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+silveira-cruz-engenharia/
+├── index.html              # Página principal
+├── styles.css              # Estilos CSS
+├── script.js               # JavaScript
+├── favicon.ico             # Ícone do site
+├── logo branco.png         # Logo da empresa
+├── manifest.json           # PWA manifest
+├── robots.txt              # SEO robots
+├── CNAME                   # Domínio customizado
+├── _headers                # Headers de segurança
+├── _redirects              # Redirecionamentos
+├── deploy.sh               # Script de deploy
+├── wrangler.toml           # Config Cloudflare Pages
+├── README.md               # Este arquivo
+├── DEPLOY_STATUS.md        # Status de deploy
+├── DEPLOY_VERIFICATION.md  # Relatório de verificação
+└── TROUBLESHOOTING.md      # Guia de solução de problemas
+```
+
+---
+
+## 🛠️ Tecnologias
+
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Hosting:** GitHub Pages
+- **CI/CD:** GitHub Actions
+- **CDN:** Cloudflare (opcional)
+- **Domínio:** engenharia.avila.inc
+
+---
+
+## 🔧 Desenvolvimento Local
+
+### Pré-requisitos
+- Navegador web moderno
+- Git instalado
+- Editor de código (VS Code recomendado)
+
+### Clonar o Repositório
+```bash
+git clone https://github.com/avilaops/silveira-cruz-engenharia.git
+cd silveira-cruz-engenharia
+```
+
+### Abrir Localmente
+Simplesmente abra o arquivo `index.html` em seu navegador:
+
+```bash
+# macOS
+open index.html
+
+# Linux
+xdg-open index.html
+
+# Windows
+start index.html
+```
+
+Ou use um servidor local:
+
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js (npx)
+npx http-server
+
+# PHP
+php -S localhost:8000
+```
+
+Acesse: `http://localhost:8000`
+
+---
+
+## 🎨 Customização
+
+### Cores
+As cores principais estão definidas em `styles.css`:
+```css
+:root {
+    --primary-color: #1a5490;
+    --accent-color: #f39c12;
+}
+```
+
+### Conteúdo
+Edite o arquivo `index.html` para alterar:
+- Textos e descrições
+- Imagens e logos
+- Links e contatos
+- Seções e estrutura
+
+### Estilos
+Edite `styles.css` para customizar:
+- Layout e responsividade
+- Animações e transições
+- Tipografia
+- Cores e temas
+
+---
+
+## 🔒 Segurança
+
+Headers de segurança configurados em `_headers`:
+- ✅ Content Security Policy (CSP)
+- ✅ X-Frame-Options
+- ✅ X-Content-Type-Options
+- ✅ Referrer-Policy
+- ✅ Permissions-Policy
+
+---
+
+## 📈 SEO
+
+- ✅ Meta tags otimizadas
+- ✅ Open Graph tags (redes sociais)
+- ✅ robots.txt configurado
+- ✅ Sitemap pronto para geração
+- ✅ URLs amigáveis
+- ✅ Performance otimizada
+
+---
+
+## 🐛 Problemas?
+
+Se encontrar problemas com deploy ou funcionamento do site:
+
+1. 📖 Consulte o [Guia de Troubleshooting](./TROUBLESHOOTING.md)
+2. 📊 Verifique o [Status de Deploy](./DEPLOY_STATUS.md)
+3. 🔍 Consulte o [Relatório de Verificação](./DEPLOY_VERIFICATION.md)
+4. 🐛 Abra uma [Issue no GitHub](https://github.com/avilaops/silveira-cruz-engenharia/issues)
+
+---
+
+## 📝 Changelog
+
+### [1.0.0] - 2025-10-25
+- ✨ Lançamento inicial do site
+- ✅ Design responsivo implementado
+- ✅ Configuração GitHub Pages
+- ✅ Configuração Cloudflare
+- ✅ Headers de segurança
+- ✅ SEO otimizado
+
+### [1.0.1] - 2025-10-25
+- 🎨 Mudança de "Engenharia Civil" para "Construção Civil"
+- 🎨 Melhorias no menu mobile com efeito glassmorphism
+- ✨ Logo SVG moderno integrado
+
+### [1.1.0] - 2025-10-27
+- 📚 Documentação completa de deploy adicionada
+- 📊 Sistema de verificação de deploy implementado
+- 🔧 Guia de troubleshooting completo
+- ✅ Scripts de deploy otimizados
+
+---
+
+## 👥 Contribuindo
+
+Contribuições são bem-vindas! Por favor:
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+---
+
+## 📞 Contato
+
+**Silveira Cruz Engenharia**
+- Website: https://engenharia.avila.inc
+- Email: contato@silveiracruz.com.br (exemplo)
+- Telefone: (00) 0000-0000 (exemplo)
+
+**Desenvolvido por:**
+- [Avila.inc](https://avila.inc)
+- Email: contato@avilatransportes.com.br
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+---
+
+## 🙏 Agradecimentos
+
+- GitHub Pages por hosting gratuito
+- Cloudflare por CDN e segurança
+- Comunidade open source por ferramentas incríveis
+
+---
+
+**Última Atualização:** 27 de Outubro de 2025  
+**Versão:** 1.1.0  
+**Status:** ✅ Em Produção
+
+---
+
+<div align="center">
+  <b>Feito com ❤️ pela equipe Avila.inc</b>
+</div>
